@@ -27,15 +27,15 @@ p5 = Power.create(name:"detachable limbs", description:"Able to remove your limb
 
 puts "Seeding hero_powers..." 
 
-HeroPower.create(strength:"marksmanship", hero_id:h1.id, power_id:p5.id)
-HeroPower.create(strength:"martial arts", hero_id:h3.id, power_id:p4.id)
-HeroPower.create(strength:"agility", hero_id:h5.id, power_id:p3.id)
-HeroPower.create(strength:"swordmanship", hero_id:h2.id, power_id:p2.id)
-HeroPower.create(strength:"endurance", hero_id:h4.id, power_id:p1.id)
-HeroPower.create(strength:"combat", hero_id:h5.id, power_id:p1.id)
-HeroPower.create(strength:"durability", hero_id:h4.id, power_id:p2.id)
-HeroPower.create(strength:"weaponry skills", hero_id:h3.id, power_id:p3.id)
-HeroPower.create(strength:"powerful", hero_id:h2.id, power_id:p4.id)
-HeroPower.create(strength:"invisibility", hero_id:h1.id, power_id:p5.id)
+HeroPower.create(strength:"Strong", hero_id:h1.id, power_id:p5.id)
+HeroPower.create(strength:"Weak", hero_id:h3.id, power_id:p4.id)
+HeroPower.create(strength:"Average", hero_id:h5.id, power_id:p3.id)
+HeroPower.create(strength:"Average", hero_id:h2.id, power_id:p2.id)
+HeroPower.create(strength:"Weak", hero_id:h4.id, power_id:p1.id)
+HeroPower.create(strength:"Strong", hero_id:h5.id, power_id:p1.id)
+HeroPower.create(strength:"Strong", hero_id:h4.id, power_id:p2.id)
+HeroPower.create(strength:"Weak", hero_id:h3.id, power_id:p3.id)
+HeroPower.create(strength:"Strong", hero_id:h2.id, power_id:p4.id)
+HeroPower.create(strength:"Average", hero_id:h1.id, power_id:p5.id)
 
 puts "Done seeding"

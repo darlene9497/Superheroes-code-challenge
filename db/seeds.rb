@@ -26,16 +26,15 @@ p4 = Power.create(name:"super maggots", description:"Has super powered slugs are
 p5 = Power.create(name:"detachable limbs", description:"Able to remove your limbs at will gives you easy access to weapons: your own arms and legs.")
 
 puts "Seeding hero_powers..." 
-
 HeroPower.create(strength:"Strong", hero_id:h1.id, power_id:p5.id)
-HeroPower.create(strength:"Weak", hero_id:h3.id, power_id:p4.id)
-HeroPower.create(strength:"Average", hero_id:h5.id, power_id:p3.id)
-HeroPower.create(strength:"Average", hero_id:h2.id, power_id:p2.id)
-HeroPower.create(strength:"Weak", hero_id:h4.id, power_id:p1.id)
-HeroPower.create(strength:"Strong", hero_id:h5.id, power_id:p1.id)
-HeroPower.create(strength:"Strong", hero_id:h4.id, power_id:p2.id)
-HeroPower.create(strength:"Weak", hero_id:h3.id, power_id:p3.id)
+HeroPower.create(strength:"Average", hero_id:h3.id, power_id:p4.id)
+HeroPower.create(strength:"Weak", hero_id:h5.id, power_id:p3.id)
 HeroPower.create(strength:"Strong", hero_id:h2.id, power_id:p4.id)
-HeroPower.create(strength:"Average", hero_id:h1.id, power_id:p5.id)
+HeroPower.create(strength:"Average", hero_id:h4.id, power_id:p1.id)
+HeroPower.create(strength:"Weak", hero_id:h5.id, power_id:p5.id)
+HeroPower.create(strength:"Strong", hero_id:h4.id, power_id:p4.id)
+HeroPower.create(strength:"Average", hero_id:h3.id, power_id:p3.id)
+HeroPower.create(strength:"Weak", hero_id:h2.id, power_id:p2.id)
+HeroPower.create(strength:"Strong", hero_id:h1.id, power_id:p1.id)
 
 puts "Done seeding"

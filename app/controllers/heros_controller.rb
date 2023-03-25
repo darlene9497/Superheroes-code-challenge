@@ -1,10 +1,11 @@
 class HerosController < ApplicationController
-    #GET     /heros
+    
+    # GET  /heros
     def index
         render json: Hero.all
     end
 
-    #GET     /heros/:id
+    # GET  /heros/:id
     def show
         hero = Hero.find_by(id: params[:id])
         if hero

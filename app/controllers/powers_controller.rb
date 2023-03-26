@@ -20,11 +20,11 @@ rescue_from ActiveRecord::RecordNotFound, with: :not_found
     def update
         power = find_power
         if power
-            power.update!(power_params)
-            render json: power
-            # description: "Updated description"
-        # elsif
-        #     render json: { error: power.errors.full_messages }, status: :unprocessable_entity
+            if power.update(power_params)
+                render json: power
+            else
+                render json: { errors: "validation errors" }, status: :unprocessable_entity
+            end
         else
             not_found
         end
